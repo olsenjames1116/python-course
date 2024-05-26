@@ -31,7 +31,7 @@ def rps(name='Player1'):
 
         computer = int(computerchoice)
 
-        print(f"\{name}, you chose {str(RPS(player)).replace('RPS.', '')}.")
+        print(f"\n{name}, you chose {str(RPS(player)).replace('RPS.', '')}.")
         print(
             f"Python chose {str(RPS(computer)).replace('RPS.', '')}.\n"
         )
@@ -79,7 +79,8 @@ def rps(name='Player1'):
         else:
             print('\n🎉🎉🎉🎉🎉')
             print('Thank you for playing!\n')
-            sys.exit(f'Bye {name}! 👋')
+            if __name__ == "__main__":
+                sys.exit(f'Bye {name}! 👋')
     return play_rps
 
 
